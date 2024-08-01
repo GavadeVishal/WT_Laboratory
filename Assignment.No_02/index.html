@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="from-container">
+    <h1><b>Student Registration Form</b></h1>
+  </div>
+<form id="studentForm" onsubmit="showPopup(event)">
+  <label for="studentName"><b>Name:</b></label>
+  <input type="text" id="studentName" name="studentName" required><br><br>
+  
+  <label for="studentID"><b>UIT No:</b></label>
+  <input type="text" id="studentID" name="studentID" required><br><br>
+  
+  <label for="course"><b>Course:</b></label>
+  <input type="text" id="course" name="course" required><br><br>
+  
+  <label for="course"><b>Email:</b></label>
+  <input type="text" id="mail" name="mail" required><br><br>
+  
+  <button type="submit">Submit</button>
+</form>
+
+<div id="popup" class="popup">
+  <h2>Details Submitted Successfully!</h2>
+  <p>Thank you for registering.</p>
+</div>
+<div id="overlay" class="overlay"></div>
+<script src="script.js"></script>
+</body>
+</html>
